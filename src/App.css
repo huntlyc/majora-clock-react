@@ -1,5 +1,18 @@
+body{
+  background-color: #312909;
+  background: radial-gradient(circle, rgba(212,189,98,1) 0%, rgba(49,41,9,1) 100%);
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
 .App {
-  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 512px;
+  margin: 20px;
 }
 
 .App-logo {
@@ -35,4 +48,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img{
+  display: block;
+  max-width: 512px;
+  width: 100%;
+  height: auto;
+}
+
+.middle,
+.marker{
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.back,
+.middle{
+  transform-origin: center;
+  transition: transform 0.5s ease;
 }
