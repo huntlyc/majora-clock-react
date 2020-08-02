@@ -1,4 +1,6 @@
 body{
+  font-size: 20px;
+  color: #fff;
   background-color: #312909;
   background: radial-gradient(circle, rgba(212,189,98,1) 0%, rgba(49,41,9,1) 100%);
 }
@@ -68,4 +70,10 @@ img{
 .middle{
   transform-origin: center;
   transition: transform 0.5s ease;
+}
+
+time{
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
 }
